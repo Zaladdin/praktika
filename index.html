@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<link rel="stylesheet"  href="css/style.css">
+<meta charset="UTF-8">
+  <title>Изучение Vue.js</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<div id="app" v-bind:style="bgc">
-	
-<h1>Введите цвет / RGB / HEX</h1>
-			<input type="text" v-on:input="bgc.backgroundColor = $event.target.value">
-			
-			<
 
-						
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+  <div  id="app" :style="{ backgroundColor: appBackground}">
+          <pre>
+            
+           
+<i>R:</i>   <input v-model="red" type="number" min="0" max="255">  <input v-model="red" type="range" min="0" max="255" step="1">
+          
+<i>G:</i>   <input v-model="green" type="number" min="0" max="255">  <input v-model="green" type="range" min="0" max="255"step="1">
+            
+<i>B:</i>   <input v-model="blue" type="number" min="0" max="255">  <input v-model="blue" type="range" min="0" max="255" step="1">
+</pre> 
   </div>
- 
-  <script src="js/main.js"></script>
+
+<script src="main.js"></script>
 </body>
 </html>
+
+
