@@ -7,9 +7,7 @@ html, body {
   padding: 0;
 }
 
-body {
 
-}
 
 #app {
   display: flex;
@@ -21,7 +19,7 @@ body {
   transition: 0.4s
 }
  input {
-    padding: 1rem 1rem;
+    padding: 0.5rem 0.5rem;
     font-size: 2rem;
     border: 0;
     border-radius: 3px;
@@ -29,9 +27,13 @@ body {
 
 
 
-h1 {
+i {
   font-family: Open Sans;
-  color: #fff;
+  color: black;
   font-weight: 300;
+  font-weight: bold;
+  font-size: 2rem;
+
 }
+
 
